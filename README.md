@@ -12,7 +12,7 @@ This repository contains scripts for data cleaning, analysis, and classification
 
 3. **analysis.ipynb**: This script conducts exploratory data analysis on the cleaned datasets. It includes visualizations and statistical analyses to understand patterns and relationships in the data. Significant correlations between various factors are calculated, and the results are saved as CSV files for further investigation. Further cleaning is then done to prepare the data for modeling.
 
-4. **classifying.ipynb**: This script implements a Random Forest classifier to predict high-risk days based on call volume. It uses features such as temperature, humidity, pm25, solarenergy, day of the week, day of the year over 30 more to classify days as high-risk or not. The predictions are made on upcoming data and saved as a CSV file for further analysis.
+4. **classifying.ipynb**: This script implements a Random Forest classifier to predict high-risk days based on call volume. It uses features such as temperature, humidity, pm25, solarenergy, day of the week, day of the year over 30 more to classify days as high-risk or not. The predictions are made on upcoming data and saved as a CSV file for further analysis. It also contains a simple OLS regression model to generate useful info on the features used in the Random Forest classifier.
 
 ### Usage:
 
