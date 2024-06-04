@@ -10,9 +10,13 @@ This repository contains scripts for data cleaning, analysis, and classification
 
 2. **data_cleaning.ipynb**: This script cleans and preprocesses the raw data obtained from CAHOOTS and weather databases. It involves tasks such as merging datasets, handling missing values, converting data types, creating dummy variables, and preparing the data for analysis. The cleaned data is saved as CSV files in the 'data' directory.
 
-3. **analysis.ipynb**: This script conducts exploratory data analysis on the cleaned datasets. It includes visualizations and statistical analyses to understand patterns and relationships in the data. Significant correlations between various factors are calculated, and the results are saved as CSV files for further investigation. Further cleaning is then done to prepare the data for modeling.
+3. **analysis.ipynb**: This script conducts exploratory data analysis on the cleaned datasets. It includes visualizations and statistical analyses to understand patterns and relationships in the data. Significant correlations between various factors are calculated, and the results are saved as CSV files for further investigation. 
 
-4. **classifying.ipynb**: This script implements a Random Forest classifier to predict high-risk days based on call volume. It uses features such as temperature, humidity, pm25, solarenergy, day of the week, day of the year over 30 more to classify days as high-risk or not. The predictions are made on upcoming data and saved as a CSV file for further analysis. It also contains a simple OLS regression model to generate useful info on the features used in the Random Forest classifier.
+4. **preprocessing.ipynb**: This script is used to preprocess the model data for classification. It prepares the data in the appropriate format and structure required by the classification models, ensuring that the data is suitable for training and evaluation.
+
+5. **classifying.ipynb**: This script implements a Random Forest classifier to predict high-risk days based on call volume. It uses features such as temperature, humidity, pm25, solarenergy, day of the week, day of the year over 30 more to classify days as high-risk or not. The predictions are made on upcoming data and saved as a CSV file for further analysis. It also contains an OLS regression model to generate useful info on the features used in the Random Forest classifier.
+
+6. **more_plots.ipynb**: This script contains additional visualization code to create more plots. These plots provide further insights into the data and the machine learning results, helping to better understand trends, patterns, and relationships that might not have been captured in the initial analysis.
 
 ### Usage:
 
@@ -39,8 +43,12 @@ To replicate the analysis:
    - **data_cleaning.ipynb**: This script cleans and preprocesses the raw data obtained from CAHOOTS and weather data files.
 
    - **analysis.ipynb**: This script conducts exploratory data analysis on the cleaned datasets.
+  
+   - **preprocessing.ipynb**: This script is used to preprocess the model data for classification.
 
    - **classifying.ipynb**: This script implements a Random Forest classifier to predict high-risk days based on call volume.
+  
+   - **more_plots.ipynb**: This script contains additional visualization code to create more plots.
 
 ### Data:
 
